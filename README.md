@@ -1,6 +1,6 @@
 # Perth House Price Prediction
 
-*note* : *This start out as a group project for Data Mining class but I made some modification with this version.*
+*note* : *This starts out as a group project for Data Mining class but I made some modification with this version.*
 
 ## Goals
 
@@ -42,7 +42,6 @@ Here I used 3 model to predict the house prices
 
 ### 2. Random Forest
 
-* n_estimators is 20
 
 ### 3. XGBoost
 
