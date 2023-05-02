@@ -1,6 +1,6 @@
 # Perth House Price Prediction
 
-*note* : *This start out as a group project for Data Mining class but I made some modification with this version.*
+*note* : *This starts out as a group project for Data Mining class but I made some modification with this version.*
 
 ## Goals
 
