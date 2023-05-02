@@ -42,7 +42,6 @@ Here I used 3 model to predict the house prices
 
 ### 2. Random Forest
 
-* n_estimators is 20
 
 ### 3. XGBoost
 
