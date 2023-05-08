@@ -32,7 +32,7 @@ I only consider some economic indicators which can indirectly affect the housing
 The **Inflation rate** will be used to scaled the price of the house from when it was sold to the current year.
 
 ## Method
-Here I used 3 model to predict the house prices
+Here I used 4 model to predict the house prices
 
 ### 1. Simple Neural Network
 
@@ -45,35 +45,37 @@ Here I used 3 model to predict the house prices
 
 ### 3. XGBoost
 
+* max_depth is 4
+* learning_rate is 0.1
+
+### 4. Gradient Boosting
+
 * max_depth is 5
-* n_estimators is 300
+* n_estimators is 500
+* learning_rate is 0.1
 
 ## Results
 
 ### Without economic index
 
-|  | Neural Networks   | XGBoost | RandomForest |
-| :---:   | :---: | :---: | :---: |
-| MAE | 71.22   | 67.79   | 73.90 |
-| MSE | 10732.60   | 9671.28   | 11785.70 |
-| RMSE | 103.59   | 98.34   | 108.56 |
-| R^2 Score | 0.78   | 0.80   | 0.76 |
+|  | Neural Networks   | XGBoost | RandomForest | Gradient Boosting |
+| :---:   | :---: | :---: | :---: | :---: |
+| MAE | 110.19   | 102.55   |110.4 | 105.14 |
+| MSE | 33946.54   | 27289.3   | 33964.11 | 28352.32 |
+| RMSE | 184.24   | 165.19   | 184.29 | 168.38 |
+| R^2 Score | 0.765   | 0.81   | 0.764 | 0.803 |
 
 ### With economic index
 
-|  | Neural Networks   | XGBoost | RandomForest |
-| :---:   | :---: | :---: | :---: |
-| MAE | 68.93   | 64.19   | 71.63 |
-| MSE | 10265.55   | 9018.7   | 11570.6 |
-| RMSE | 101.32   | 94.97   | 107.57 |
-| R^2 Score | 0.79   | 0.82   | 0.77 |
 
-## Future Work
+|  | Neural Networks   | XGBoost | RandomForest | Gradient Boosting |
+| :---:   | :---: | :---: | :---: | :---: |
+| MAE | 106.38   | 97.21   | 104.65 | 97.89 |
+| MSE | 33414.91   | 25251.42   | 32065.77 | 25627.29 |
+| RMSE | 182.79   | 158.90   |  179.06 | 160.08 |
+| R^2 Score |  0.772   | 0.825   | 0.777 | 0.822 |
 
-* Find out better way to handle outlier than just dropping it
 
-* Tune hyperparameter to produce more accurate result
 
-* Perform clearly EDA
 
 
